@@ -29,7 +29,7 @@ export const MovieList = ({ api ,title }) => {
   return (
 
     <main>
-      {loading ?<p className='text-center text-white text-2xl'>Patience is the key to see a masterpiece</p> : ""}
+      {loading ?<p className='text-center dark:text-white text-black  text-2xl'>Patience is the key to see a masterpiece</p> : ""}
       <section className=' max-w-7xl mx-auto py-7'>
 
 <div className='flex justify-center my-10'>

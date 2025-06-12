@@ -19,7 +19,7 @@ export const Search = () => {
 
   return (
      <main>
-      {loading ? <p className='text-center text-xl font-semibold text-gray-500 py-4'>Patience is the key to see a masterpiece</p> : ""}
+    {loading ?<p className='text-center dark:text-white text-black  text-2xl'>Patience is the key to see a masterpiece</p> : ""}
       <section className=' max-w-7xl mx-auto py-7 '>
         
         {movies.length>0?<p className='text-2xl font-bold text-white text-center mb-6'>Results For "{query}"</p>:<p className='text-2xl font-bold text-red-500 mb-6 text-center '> No Results Found For "{query}"</p>}
