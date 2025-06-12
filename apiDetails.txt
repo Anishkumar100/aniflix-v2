@@ -1,0 +1,40 @@
+api_key=`15b2f92d30addab5270faf0311e376d3`
+
+
+now_playing=`https://api.themoviedb.org/3/movie/now_playing?api_key=15b2f92d30addab5270faf0311e376d3`
+
+popular movies=`https://api.themoviedb.org/3/movie/popular?api_key=15b2f92d30addab5270faf0311e376d3`
+
+
+upcoming movies=`https://api.themoviedb.org/3/movie/upcoming?api_key=15b2f92d30addab5270faf0311e376d3`
+
+
+top_rated movies=`https://api.themoviedb.org/3/movie/top_rated?api_key=15b2f92d30addab5270faf0311e376d3`
+
+
+individual movie= `https://api.themoviedb.org/3/movie/{movie_id}?api_key=15b2f92d30addab5270faf0311e376d3`
+
+
+searching movies =`https://api.themoviedb.org/3/search/movie?api_key=15b2f92d30addab5270faf0311e376d3?query={movie_name}`
+
+-------------------------------------------------------------------------
+
+For Future Use:----
+
+we will use, series. for now lets add genre
+
+genre of movies = `https://api.themoviedb.org/3/genre/movie/list?api_key=15b2f92d30addab5270faf0311e376d3`
+
+//this will provide u the code for genres
+
+if u need a specific set of movies then,for ex:-
+
+Horror Genre= `https://api.themoviedb.org/3/discover/movie?api_key=15b2f92d30addab5270faf0311e376d3&with_genres=27`
+
+(the code 27 symbolises this particular genre. so we have to fix it accordingly)
+
+
+we will need actors:-
+
+for actor ID = `https://api.themoviedb.org/3/search/person?api_key=15b2f92d30addab5270faf0311e376d3&query=${actorName}`;
+
