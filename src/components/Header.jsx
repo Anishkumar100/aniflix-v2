@@ -159,7 +159,7 @@ export const Header = () => {
                 e.preventDefault();
                 if (term.trim()) {
                   navigate(`/search/person?actor_name=${actor}`);
-                  setTerm("");
+                  setActor("");
                 }
               }}>
 
