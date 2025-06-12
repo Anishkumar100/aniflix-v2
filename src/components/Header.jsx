@@ -135,9 +135,11 @@ export const Header = () => {
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                 </svg>
               </div>
+            <form onSubmit={(e)=> handleSearch(e)}>
               <input type="text" value={term} onChange={(e) => setTerm(e.target.value)}
-                onKeyDown={(e) => handleSearch(e)} id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Movies..." />
-                <button className='mt-2 w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700' onClick={()=>handleSearch()}>Search</button>
+                 id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Movies..." />
+                <input type="submit" value="Search" className='mt-2 w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700'/>
+            </form>
 
             
             </div>
@@ -149,9 +151,11 @@ export const Header = () => {
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                 </svg>
               </div>
+              <form onSubmit={(e)=> handleActorSearch(e)}>
               <input type="text" value={actor} onChange={(e) => setActor(e.target.value)}
-                onKeyDown={(e) => handleActorSearch(e)} id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Actors..." />
-                 <button className='mt-2 w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700' onClick={()=>handleSearch()}>Search</button>
+                id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Actors..." />
+                 <input type="submit" className='mt-2 w-full p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700' value="Search"/>
+                 </form>
 
             
             </div>
