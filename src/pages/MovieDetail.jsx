@@ -59,6 +59,7 @@ export const MovieDetail = () => {
     return (
          
         <main>
+                {loading ?<p className='text-center text-white text-2xl'>Patience is the key to see a masterpiece</p> : ""}
             <section className='flex flex-wrap justify-around py-5'>
                 <div className='max-w-sm'>
                     <img className='rounded' src={movieData.poster_path ? `https://image.tmdb.org/t/p/w500/${movieData.poster_path}` : assets.sathikSanjay} />
